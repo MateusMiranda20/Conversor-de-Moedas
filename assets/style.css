@@ -9,11 +9,9 @@ body{
 }
 
 .container{
-    width: 375px;
+    width: 357px;
     background-color: #f6f6f6;
     margin: 0 auto;
-    margin-top: 50px;
-
 }
 
 header {
@@ -48,7 +46,7 @@ select {
     display: block;
     border: 2px solid #BBBBBB;
     border-radius: 4px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     outline: none;
     padding-left: 5px;
@@ -57,4 +55,76 @@ select {
     appearance: none;
     font-size: 17px;
     font-weight: 700;
+}
+
+input {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 48px;
+    display: block;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+    border: 2px solid #BBBBBB;
+    border-radius: 4px;
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background: #1B83E2;
+    border-radius: 25px;
+    width: 100%;
+    height: 48px;
+    margin-top: 17px;
+    margin-bottom: 23px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+section {
+    text-align: center;
+    border: 1px solid #1B83E2;
+    border-radius: 4px
+}
+
+.geral {
+    padding: 10px;
+}
+
+img {
+    width: 44px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+}
+
+.valor {
+    color: #1B83E2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 3px;
+}
+
+.seta {
+    width: 28px;
+    margin: 10px;
 }
