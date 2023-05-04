@@ -4,6 +4,7 @@ const select = document.getElementById("trocaDeValores")
 
 const dolar = 5.2
 const euro = 5.9
+const bitcoin = 0.0000069
 
 const conversao = () => {
     const inputValue = document.getElementById('input-valor').value
@@ -26,6 +27,12 @@ const conversao = () => {
         { style: "currency", currency: "EUR" }
         ).format(inputValue / euro);
     }
+
+    else if (select.value === "Bitcoin") {
+        convertion.innerHTML = new Intl.NumberFormat("en-US",
+        { style: "currency", currency: "BTC" }
+        ).format(inputValue / bitcoin);
+    }
 }
 
  trocaDeMoeda = () => {
@@ -39,6 +46,10 @@ const conversao = () => {
     if (select.value === "€ Euro") {
         name.innerHTML = "€ Euro"
         imagens.src = "/img/Euro.png"
+    }
+    else if (select.value === "Bitcoin") {
+        name.innerHTML = "Bitcoin"
+        imagens.src = "/img/Bitcon.png"
     }
 
     conversao()
